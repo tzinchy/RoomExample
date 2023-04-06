@@ -1,0 +1,50 @@
+﻿<Window x:Name="___Без_имени_" x:Class="RoomExample.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RoomExample"
+        mc:Ignorable="d"
+        Title="Две комнаты" Height="450" Width="800">
+    <Grid>
+        <Grid Background="#FF8FF955" Margin="400,37,54,101">
+            <Label Content="" Height="296" VerticalAlignment="Center"/>
+
+        </Grid>
+        <Grid Background="#FF03D7FF" RenderTransformOrigin="0.5,0.5" Margin="40,33,401,99">
+           
+            <TextBlock TextWrapping="Wrap" Margin="3,49,245,234"><Run Language="ru-ru" Text="Длинна"/><LineBreak/><Run/></TextBlock>
+            <TextBlock TextWrapping="Wrap" Margin="0,76,248,204" RenderTransformOrigin="0.547,1.738"><Run Language="ru-ru" Text="Ширина"/><LineBreak/><Run Language="ru-ru"/><LineBreak/><Run/></TextBlock>
+            <TextBlock TextWrapping="Wrap" Margin="0,139,248,144"><Run Language="ru-ru" Text="Периметр"/><LineBreak/><Run/></TextBlock>
+            <TextBlock TextWrapping="Wrap" Margin="0,166,248,112"><Run Text="П"/><Run Language="ru-ru" Text="лощадь"/><LineBreak/><Run/></TextBlock>
+            <TextBlock TextWrapping="Wrap" Margin="-1,195,249,86"><Run Language="ru-ru" Text="Метраж"/><LineBreak/><Run/></TextBlock>
+            <TextBlock TextWrapping="Wrap" Margin="1,108,247,173"><Run Language="ru-ru" Text="Число человек"/></TextBlock>
+            <TextBlock TextWrapping="Wrap" Margin="362,48,-114,234"><Run Language="ru-ru" Text="Длинна"/><LineBreak/><Run/></TextBlock>
+            <TextBlock TextWrapping="Wrap" Margin="361,75,-113,208" RenderTransformOrigin="0.547,1.738"><Run Language="ru-ru" Text="Ширина"/><LineBreak/><Run Language="ru-ru"/><LineBreak/><Run/></TextBlock>
+            <TextBlock TextWrapping="Wrap" Margin="362,104,-114,179"><Run Language="ru-ru" Text="Число человек"/></TextBlock>
+            <TextBlock TextWrapping="Wrap" Margin="359,134,-111,150"><Run Language="ru-ru" Text="Периметр"/><LineBreak/><Run/></TextBlock>
+            <TextBlock TextWrapping="Wrap" Margin="360,166,-112,118"><Run Text="П"/><Run Language="ru-ru" Text="лощадь"/><LineBreak/><Run/></TextBlock>
+            <TextBlock TextWrapping="Wrap" Margin="361,196,-113,86" RenderTransformOrigin="1.006,0.496"><Run Language="ru-ru" Text="Метраж"/><LineBreak/><Run/></TextBlock>
+            <Button x:Name="ButtonOpen1" Content="Открыть" Margin="3,316,236,-40" Click="ButtonOpen1_Click" />
+            <Button x:Name="ButtenOpen2" Content="Открыть" Margin="366,313,-127,-37" Click="ButtenOpen2_Click"/>
+            <Button x:Name="ExitButton" Content="Закрыть&#xD;&#xA;" Margin="581,-31,-342,307" Click="ExitButton_Click"/>
+            <Label x:Name="LabelWidth1" Content="&#xD;&#xA;" Margin="170,77,35,202" ContextMenuClosing="LabelWidth1_ContextMenuClosing"/>
+            <Label x:Name="LabelLength1" Content="" Margin="170,47,10,225" ContextMenuClosing="LabelLength1_ContextMenuClosing_1"/>
+            <Label x:Name="LabelArea1" Content="&#xD;&#xA;&#xD;&#xA;" Margin="170,170,35,109" ContextMenuClosing="LabelArea1_ContextMenuClosing"/>
+            <Label x:Name="LabelNumPerson1" Content="&#xD;&#xA;" Margin="170,108,35,171" ContextMenuClosing="LabelNumPerson1_ContextMenuClosing_1"/>
+            <Label x:Name="LabelPerimetr1" Content="&#xD;&#xA;" Margin="170,140,35,139" ContextMenuClosing="LabelPerimetr1_ContextMenuClosing_1"/>
+            <Label x:Name="LabelPerimetr2" Content="&#xD;&#xA;" Margin="502,137,-297,142" ContextMenuClosing="LabelPerimetr2_ContextMenuClosing"/>
+            <Label x:Name="LabelPersonArea1" Content="&#xD;&#xA;" Margin="170,193,35,86" ContextMenuClosing="LabelPersonArea1_ContextMenuClosing"/>
+            <Label x:Name="LabelArea2" Content="&#xD;&#xA;" Margin="496,165,-291,114" ContextMenuClosing="LabelArea2_ContextMenuClosing"/>
+            <Label x:Name="LabelPersonArea2" Content="&#xA;" Margin="502,193,-297,86" ContextMenuClosing="LabelPersonArea2_ContextMenuClosing"/>
+
+        </Grid>
+        <TextBlock TextWrapping="Wrap" Margin="50,37,639,370" FontWeight="Bold"><Run Language="ru-ru" Text="Первая комната"/><LineBreak/><Run Language="ru-ru"/></TextBlock>
+        <TextBlock TextWrapping="Wrap" Margin="400,37,289,370" FontWeight="Bold"><Run Language="ru-ru" Text="Вторая"/><Run Text=" комната"/><LineBreak/><Run/></TextBlock>
+        <Button x:Name="ButtonAll" Content="Поссчитать все" Margin="41,390,639,18" Click="ButtonAll_Click"/>
+        <Label x:Name="LabelAllArea" Content="LabelAllArea&#xD;&#xA;" Margin="409,390,275,18" ContextMenuClosing="LabelAllArea_ContextMenuClosing"/>
+        <TextBox x:Name="TBLength2" TextWrapping="Wrap" Width="120" Margin="556,80,124,336" ContextMenuClosing="TBLength2_ContextMenuClosing" />
+        <TextBox x:Name="TBWidth2" TextWrapping="Wrap" Width="120" Margin="556,111,124,305" ContextMenuClosing="TBWidth2_ContextMenuClosing" />
+        <TextBox x:Name="TBNumPerson2" TextWrapping="Wrap" Width="120" Margin="556,141,124,275" ContextMenuClosing="TBNumPerson2_ContextMenuClosing"/>
+    </Grid>
+</Window>
